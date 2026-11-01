@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MirrorLance — Modern Websites for Growing Businesses</title>
+  <meta name="description" content="MirrorLance builds clean, fast, conversion-focused websites for businesses. Custom web development today, AI automation next. Get a custom quote." />
+  <meta property="og:title" content="MirrorLance — Modern Websites for Growing Businesses" />
+  <meta property="og:description" content="Clean design, fast performance and websites built to convert. Get a custom quote from MirrorLance." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap 5 + Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+
+  <!-- MirrorLance styles -->
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="90">
+
+  <!-- =========================================================
+       NAVBAR
+       ========================================================= -->
+  <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark fixed-top ml-navbar">
+    <div class="container">
+      <a class="navbar-brand ml-brand" href="#home">
+        <img src="images/mirrorlance-logo.png" alt="MirrorLance Logo">
+        
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#packages">Packages</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+          <li class="nav-item ms-lg-2">
+            <!-- REPLACE: Instagram URL -->
+            <a class="nav-link nav-icon" href="https://instagram.com/mirror_lancee" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          </li>
+          <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+            <a class="btn btn-accent btn-sm px-3" href="#contact">Get a Quote</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- =========================================================
+       1. HERO CAROUSEL
+       Replace background images in css/style.css (.hero-slide-1/2/3)
+       or swap the files in /images (hero-1.jpg, hero-2.jpg, hero-3.jpg)
+       ========================================================= -->
+  <header id="home" class="hero">
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="6000" data-bs-pause="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active hero-slide hero-slide-1">
+          <div class="hero-overlay"></div>
+          <div class="container hero-content">
+            <span class="eyebrow">Web Development Studio</span>
+            <h1 class="hero-title">Modern websites for <span class="text-accent">growing businesses</span>.</h1>
+            <p class="hero-sub">We design and build fast, professional websites that help your business look credible and win more customers online.</p>
+            <a href="#contact" class="btn btn-accent btn-lg">Get a Custom Quote <i class="bi bi-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="carousel-item hero-slide hero-slide-2">
+          <div class="hero-overlay"></div>
+          <div class="container hero-content">
+            <span class="eyebrow">Design That Earns Trust</span>
+            <h1 class="hero-title">Clean design that <span class="text-accent">builds trust</span>.</h1>
+            <p class="hero-sub">Sharp layouts, readable content and a consistent brand feel — so visitors understand you quickly and feel confident reaching out.</p>
+            <a href="#packages" class="btn btn-accent btn-lg">View Packages <i class="bi bi-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="carousel-item hero-slide hero-slide-3">
+          <div class="hero-overlay"></div>
+          <div class="container hero-content">
+            <span class="eyebrow">Built Around Your Goals</span>
+            <h1 class="hero-title">Custom web solutions <span class="text-accent">built for results</span>.</h1>
+            <p class="hero-sub">From landing pages to complete business websites, every project is planned around what your business needs to grow.</p>
+            <a href="#contact" class="btn btn-accent btn-lg">Contact Us <i class="bi bi-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="hero-arrow"><i class="bi bi-chevron-left"></i></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="hero-arrow"><i class="bi bi-chevron-right"></i></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Instagram DM strip under hero -->
+    <div class="dm-strip">
+      <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-2">
+        <p class="mb-0"><i class="bi bi-instagram text-accent me-2"></i><strong>DM us on Instagram</strong> for project details, custom quotes and quick questions.</p>
+        <!-- REPLACE: Instagram URL -->
+        <a href="https://instagram.com/mirror_lancee" target="_blank" rel="noopener" class="dm-strip-link">@mirror_lancee <i class="bi bi-arrow-up-right"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- =========================================================
+         2. ABOUT / INTRO
+         ========================================================= -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <span class="section-label">About MirrorLance</span>
+            <h2 class="section-title">Websites that look sharp and <span class="text-accent">work hard</span> for your business.</h2>
+          </div>
+          <div class="col-lg-6">
+            <p class="lead-text">MirrorLance builds modern websites for businesses that want to stand out online and turn visitors into enquiries.</p>
+            <p class="text-soft">Our focus is simple: clean design, fast performance and a clear path to conversion. Every page is built to explain what you do, earn trust and make it easy for customers to contact you.</p>
+            <p class="text-soft mb-4">Next, we are expanding into <strong class="text-light">AI automation</strong> — helping businesses save time with smart workflows, chat assistants and automated lead handling.</p>
+            <div class="d-flex flex-wrap gap-3">
+              <a href="#contact" class="btn btn-accent">Start Your Project</a>
+              <a href="#services" class="btn btn-outline-light-ml">Explore Services</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-3 mt-5 stat-row">
+          <div class="col-6 col-md-3"><div class="stat"><i class="bi bi-phone"></i><span>Mobile-first builds</span></div></div>
+          <div class="col-6 col-md-3"><div class="stat"><i class="bi bi-lightning-charge"></i><span>Performance focused</span></div></div>
+          <div class="col-6 col-md-3"><div class="stat"><i class="bi bi-bullseye"></i><span>Designed to convert</span></div></div>
+          <div class="col-6 col-md-3"><div class="stat"><i class="bi bi-cpu"></i><span>AI automation next</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         4. SERVICES
+         ========================================================= -->
+    <section id="services" class="section section-alt">
+      <div class="container">
+        <div class="section-head text-center">
+          <span class="section-label">Services</span>
+          <h2 class="section-title">What we <span class="text-accent">build</span></h2>
+          <p class="text-soft mx-auto section-intro">Focused services for businesses that want a strong, professional presence online.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <article class="service-card">
+              <div class="icon-box"><i class="bi bi-building"></i></div>
+              <h3>Business Websites</h3>
+              <p>Professional multi-page websites that present your business clearly and generate enquiries.</p>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="service-card">
+              <div class="icon-box"><i class="bi bi-window-stack"></i></div>
+              <h3>Landing Pages</h3>
+              <p>Single, focused pages for campaigns, launches and offers — built to drive one clear action.</p>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="service-card">
+              <div class="icon-box"><i class="bi bi-arrow-repeat"></i></div>
+              <h3>Website Redesign</h3>
+              <p>Modernise an outdated site with a cleaner look, better structure and faster performance.</p>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="service-card">
+              <div class="icon-box"><i class="bi bi-tools"></i></div>
+              <h3>Maintenance &amp; Support</h3>
+              <p>Ongoing updates, fixes and content changes so your website stays reliable after launch.</p>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="service-card">
+              <div class="icon-box"><i class="bi bi-robot"></i></div>
+              <h3>AI Automation <span class="badge-soon">Coming soon</span></h3>
+              <p>Smart workflows, chat assistants and automated lead handling to save your team time.</p>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="service-card">
+              <div class="icon-box"><i class="bi bi-code-slash"></i></div>
+              <h3>Custom Web Solutions</h3>
+              <p>Booking systems, dashboards, forms and custom features tailored to how your business works.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         5. PACKAGES (no prices)
+         ========================================================= -->
+    <section id="packages" class="section section-alt">
+      <div class="container">
+        <div class="section-head text-center">
+          <span class="section-label">Packages</span>
+          <h2 class="section-title">Choose a <span class="text-accent">starting point</span></h2>
+          <p class="text-soft mx-auto section-intro">Pick the package closest to your needs. We will shape the final scope together.</p>
+        </div>
+
+        <div class="row g-4 align-items-stretch">
+          <!-- Starter -->
+          <div class="col-lg-4">
+            <div class="package-card">
+              <h3 class="package-name">Starter</h3>
+              <p class="package-for">Perfect for individuals and small businesses</p>
+              <ul class="package-list">
+                <li><i class="bi bi-check2"></i>Up to 3 pages or a one-page site</li>
+                <li><i class="bi bi-check2"></i>Clean, mobile-responsive design</li>
+                <li><i class="bi bi-check2"></i>Contact / inquiry form</li>
+                <li><i class="bi bi-check2"></i>Instagram DM support</li>
+                <li><i class="bi bi-check2"></i>Basic on-page SEO setup</li>
+                <li><i class="bi bi-check2"></i>Launch support</li>
+              </ul>
+              <a href="#contact" class="btn btn-outline-accent w-100 mt-auto" data-package="Starter">Choose Starter</a>
+            </div>
+          </div>
+          <!-- Business (featured) -->
+          <div class="col-lg-4">
+            <div class="package-card featured">
+              <span class="package-flag">Most Popular</span>
+              <h3 class="package-name">Business</h3>
+              <p class="package-for">Perfect for growing businesses</p>
+              <ul class="package-list">
+                <li><i class="bi bi-check2"></i>Up to 6–8 custom pages</li>
+                <li><i class="bi bi-check2"></i>Custom design aligned to your brand</li>
+                <li><i class="bi bi-check2"></i>Lead-focused layout &amp; clear CTAs</li>
+                <li><i class="bi bi-check2"></i>Speed optimisation</li>
+                <li><i class="bi bi-check2"></i>SEO-ready structure &amp; Google Maps</li>
+                <li><i class="bi bi-check2"></i>Social media integration</li>
+                <li><i class="bi bi-check2"></i>Post-launch support period</li>
+              </ul>
+              <a href="#contact" class="btn btn-accent w-100 mt-auto" data-package="Business">Choose Business</a>
+            </div>
+          </div>
+          <!-- Premium -->
+          <div class="col-lg-4">
+            <div class="package-card">
+              <h3 class="package-name">Premium</h3>
+              <p class="package-for">Perfect for businesses needing custom solutions</p>
+              <ul class="package-list">
+                <li><i class="bi bi-check2"></i>Fully custom pages &amp; structure</li>
+                <li><i class="bi bi-check2"></i>Advanced features (booking, catalog, etc.)</li>
+                <li><i class="bi bi-check2"></i>Premium UI with refined details</li>
+                <li><i class="bi bi-check2"></i>Performance &amp; SEO optimisation</li>
+                <li><i class="bi bi-check2"></i>Integrations with your tools</li>
+                <li><i class="bi bi-check2"></i>Priority support &amp; maintenance</li>
+                <li><i class="bi bi-check2"></i>AI automation ready</li>
+              </ul>
+              <a href="#contact" class="btn btn-outline-accent w-100 mt-auto" data-package="Premium">Choose Premium</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="package-note">
+          <i class="bi bi-info-circle text-accent"></i>
+          <span><strong>Every project is custom.</strong> Final scope depends on your business needs. Custom quotes are available — <a href="#contact" data-package="Custom">request yours</a>.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         6. PROCESS
+         ========================================================= -->
+    <section id="process" class="section">
+      <div class="container">
+        <div class="section-head text-center">
+          <span class="section-label">Process</span>
+          <h2 class="section-title">How we <span class="text-accent">work</span></h2>
+          <p class="text-soft mx-auto section-intro">A clear, simple process — you always know what happens next.</p>
+        </div>
+        <ol class="process-grid list-unstyled">
+          <li class="process-step"><span class="step-num">01</span><h3>Discovery</h3><p>We learn about your business, goals and customers.</p></li>
+          <li class="process-step"><span class="step-num">02</span><h3>Planning</h3><p>We define pages, features, content and timeline.</p></li>
+          <li class="process-step"><span class="step-num">03</span><h3>Design</h3><p>We create a clean layout that fits your brand.</p></li>
+          <li class="process-step"><span class="step-num">04</span><h3>Development</h3><p>We build a fast, responsive, reliable website.</p></li>
+          <li class="process-step"><span class="step-num">05</span><h3>Testing</h3><p>We check every device, form and link before launch.</p></li>
+          <li class="process-step"><span class="step-num">06</span><h3>Launch</h3><p>Your site goes live, with support when you need it.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         7. PORTFOLIO
+         Project links are stored in js/main.js → PORTFOLIO object.
+         ========================================================= -->
+    <section id="portfolio" class="section section-alt">
+      <div class="container">
+        <div class="section-head text-center">
+          <span class="section-label">Portfolio</span>
+          <h2 class="section-title">Work by <span class="text-accent">industry</span></h2>
+          <p class="text-soft mx-auto section-intro">Choose a category to see live websites we have built for that type of business.</p>
+        </div>
+
+        <!-- Cards: data-category must match a key in PORTFOLIO (js/main.js) -->
+        <div class="row g-4 justify-content-center">
+          <div class="col-sm-6 col-lg-4">
+            <button type="button" class="portfolio-card" data-category="gym">
+              <div class="portfolio-img" style="background-image:url('images/portfolio-gym.jpg')"></div>
+              <div class="portfolio-body">
+                <div><h3>Gym &amp; Fitness</h3><span class="portfolio-count" data-count="gym"></span></div>
+                <span class="portfolio-cta">View Projects <i class="bi bi-arrow-right"></i></span>
+              </div>
+            </button>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <button type="button" class="portfolio-card" data-category="doctor">
+              <div class="portfolio-img" style="background-image:url('images/portfolio-doctor.jpg')"></div>
+              <div class="portfolio-body">
+                <div><h3>Doctor &amp; Clinic</h3><span class="portfolio-count" data-count="doctor"></span></div>
+                <span class="portfolio-cta">View Projects <i class="bi bi-arrow-right"></i></span>
+              </div>
+            </button>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <button type="button" class="portfolio-card" data-category="restaurant">
+              <div class="portfolio-img" style="background-image:url('images/portfolio-restaurant.jpg')"></div>
+              <div class="portfolio-body">
+                <div><h3>Restaurant</h3><span class="portfolio-count" data-count="restaurant"></span></div>
+                <span class="portfolio-cta">View Projects <i class="bi bi-arrow-right"></i></span>
+              </div>
+            </button>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <button type="button" class="portfolio-card" data-category="agency">
+              <div class="portfolio-img" style="background-image:url('images/portfolio-agency.jpg')"></div>
+              <div class="portfolio-body">
+                <div><h3>Agency</h3><span class="portfolio-count" data-count="agency"></span></div>
+                <span class="portfolio-cta">View Projects <i class="bi bi-arrow-right"></i></span>
+              </div>
+            </button>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <button type="button" class="portfolio-card" data-category="ecommerce">
+              <div class="portfolio-img" style="background-image:url('images/portfolio-ecommerce.jpg')"></div>
+              <div class="portfolio-body">
+                <div><h3>E-commerce</h3><span class="portfolio-count" data-count="ecommerce"></span></div>
+                <span class="portfolio-cta">View Projects <i class="bi bi-arrow-right"></i></span>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        <div class="text-center mt-5">
+          <p class="text-soft mb-3">Want a website like these for your business?</p>
+          <a href="#contact" class="btn btn-accent">Request a Similar Website</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio modal (content filled by js/main.js) -->
+    <div class="modal fade ml-modal" id="portfolioModal" tabindex="-1" aria-labelledby="portfolioModalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div>
+              <span class="section-label mb-1">Portfolio</span>
+              <h3 class="modal-title" id="portfolioModalTitle">Projects</h3>
+            </div>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <ul class="project-links list-unstyled mb-0" id="portfolioModalList"></ul>
+          </div>
+          <div class="modal-footer">
+            <span class="text-soft small me-auto">Like what you see?</span>
+            <a href="#contact" class="btn btn-accent btn-sm" data-bs-dismiss="modal">Get a Quote</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========================================================
+         8. WHY CHOOSE MIRRORLANCE
+         ========================================================= -->
+    <section id="why" class="section">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-5">
+            <span class="section-label">Why MirrorLance</span>
+            <h2 class="section-title">A website partner that <span class="text-accent">focuses on results</span>.</h2>
+            <p class="text-soft mb-4">We keep things clear and practical — a website that looks professional, works on every device and helps you get more enquiries.</p>
+            <a href="#contact" class="btn btn-accent">Talk About Your Project</a>
+          </div>
+          <div class="col-lg-7">
+            <div class="row g-3">
+              <div class="col-sm-6"><div class="why-item"><i class="bi bi-gem"></i><span>Clean and modern design</span></div></div>
+              <div class="col-sm-6"><div class="why-item"><i class="bi bi-phone"></i><span>Mobile responsive</span></div></div>
+              <div class="col-sm-6"><div class="why-item"><i class="bi bi-lightning-charge"></i><span>Fast loading</span></div></div>
+              <div class="col-sm-6"><div class="why-item"><i class="bi bi-pencil-square"></i><span>Easy to update</span></div></div>
+              <div class="col-sm-6"><div class="why-item"><i class="bi bi-people"></i><span>Client-focused</span></div></div>
+              <div class="col-sm-6"><div class="why-item"><i class="bi bi-graph-up-arrow"></i><span>Built for conversions</span></div></div>
+              <div class="col-12"><div class="why-item"><i class="bi bi-sliders"></i><span>Custom solutions for every business</span></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         9. FAQ
+         ========================================================= -->
+    <section id="faq" class="section section-alt">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-4">
+            <span class="section-label">FAQ</span>
+            <h2 class="section-title">Common <span class="text-accent">questions</span></h2>
+            <p class="text-soft">Have a question that is not listed here? Send us a message — we reply quickly.</p>
+            <div class="d-flex flex-wrap gap-2">
+              <a href="#contact" class="btn btn-accent">Ask a Question</a>
+              <!-- REPLACE: Instagram URL -->
+              <a href="https://instagram.com/mirror_lancee" target="_blank" rel="noopener" class="btn btn-outline-light-ml"><i class="bi bi-instagram me-1"></i> DM Us</a>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="accordion ml-accordion" id="faqAccordion">
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">How long does a website take?</button>
+                </h3>
+                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">The timeline depends on the project size and features. A simple website can take a few days, while a custom website may take longer.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">Do you offer custom design?</button>
+                </h3>
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">Yes, every website is designed based on the client’s business needs, brand style, and goals.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">Can you update an existing website?</button>
+                </h3>
+                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">Yes, we can redesign, improve, or update an existing website.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">Do you provide ongoing support?</button>
+                </h3>
+                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">Yes, support is available after launch for updates, fixes, and maintenance.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">How do I contact you?</button>
+                </h3>
+                <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">You can use the inquiry form on the website to send your project details. For quick questions, you can also DM us on Instagram.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =========================================================
+         3. ABOUT THE FOUNDER
+         Replace the monogram block with <img src="images/founder.jpg"> when ready
+         ========================================================= -->
+    <section id="founder" class="section">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5">
+            <div class="founder-visual">
+              <!-- REPLACE: swap this monogram for your photo, e.g. <img src="images/founder.jpg" alt="Balasakthivel, Founder of MirrorLance" class="img-fluid"> -->
+              <div class="founder-monogram">B</div>
+              <div class="founder-badge">
+                <span class="d-block fw-bold">Balasakthivel</span>
+                <small>Founder, MirrorLance</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <span class="section-label">About the Founder</span>
+            <h2 class="section-title">Built by <span class="text-accent">Balasakthivel</span>.</h2>
+            <p class="lead-text">MirrorLance is built by Balasakthivel, a young founder passionate about web development, modern design, AI automation and creating digital solutions that help businesses grow.</p>
+            <p class="text-soft">He started MirrorLance to give small and growing businesses access to websites that feel premium, load fast and are built with a clear purpose. Every project gets direct attention — from the first conversation to launch and beyond.</p>
+            <ul class="founder-tags list-unstyled d-flex flex-wrap gap-2 mt-4 mb-4">
+              <li>Web Development</li>
+              <li>Modern Design</li>
+              <li>AI Automation</li>
+              <li>Business Growth</li>
+              <li>Creative Digital Work</li>
+            </ul>
+            <a href="#contact" class="btn btn-accent">Work With MirrorLance</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================================================
+         10 + 11. CONTACT / INQUIRY + INSTAGRAM DM EMPHASIS
+         ========================================================= -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <div class="row g-5">
+          <!-- Left: Social / DM -->
+          <div class="col-lg-5">
+            <span class="section-label">Contact</span>
+            <h2 class="section-title">Let’s talk about <span class="text-accent">your project</span>.</h2>
+            <p class="text-soft mb-4">Send us a few details about your business and what you need. We will get back to you with next steps and a custom quote.</p>
+
+            <!-- Instagram — primary channel -->
+            <div class="ig-card">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="ig-icon"><i class="bi bi-instagram"></i></div>
+                <div>
+                  <span class="ig-kicker">Fastest way to reach us</span>
+                  <h3 class="ig-title mb-0">DM us on Instagram</h3>
+                </div>
+              </div>
+              <p class="mb-3">DM us on Instagram for project details, custom quotes and quick questions. Comment or DM for more details — Instagram is the fastest way to reach us.</p>
+              <!-- REPLACE: Instagram URL + handle -->
+              <a href="https://instagram.com/mirror_lancee" target="_blank" rel="noopener" class="btn btn-accent w-100"><i class="bi bi-instagram me-2"></i>Message @mirror_lancee</a>
+            </div>
+
+            <!-- Secondary channels -->
+            <ul class="contact-list list-unstyled mt-4">
+              <!-- REPLACE: LinkedIn URL -->
+              <li><i class="bi bi-linkedin"></i><a href="https://linkedin.com/in/mirror-lance-4a4446448/" target="_blank" rel="noopener">Connect on LinkedIn</a></li>
+              <!-- REPLACE: Email -->
+              <li><i class="bi bi-envelope"></i><a href="mailto:mirrorlancee@gmail.com">mirrorlancee@gmail.com</a></li>
+              
+             
+            </ul>
+          </div>
+
+          <!-- Right: Inquiry form -->
+          <div class="col-lg-7">
+            <div class="form-card">
+              <h3 class="form-title">Project Inquiry</h3>
+              <p class="text-soft mb-4">Tell us about your business and project — the more detail you share, the more accurate your quote will be.</p>
+
+              <form id="inquiryForm" class="needs-validation" novalidate>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="fullName" class="form-label">Full Name *</label>
+                    <input type="text" class="form-control" id="fullName" name="fullName" maxlength="100" required placeholder="Your name" />
+                    <div class="invalid-feedback">Please enter your name.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="businessName" class="form-label">Business Name</label>
+                    <input type="text" class="form-control" id="businessName" name="businessName" maxlength="120" placeholder="Your business" />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="email" class="form-label">Email *</label>
+                    <input type="email" class="form-control" id="email" name="email" maxlength="255" required placeholder="you@example.com" />
+                    <div class="invalid-feedback">Please enter a valid email.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="phone" class="form-label">Phone/WhatsApp *</label>
+                    <input type="tel" class="form-control" id="phone" name="phone" maxlength="20" pattern="^[+0-9\s\-()]{7,20}$" required placeholder="+91 00000 00000" />
+                    <div class="invalid-feedback">Please enter a valid phone number.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="service" class="form-label">Service Needed *</label>
+                    <select class="form-select" id="service" name="service" required>
+                      <option value="" selected disabled>Select a package</option>
+                      <option value="Starter">Starter</option>
+                      <option value="Business">Business</option>
+                      <option value="Premium">Premium</option>
+                      <option value="Custom">Custom</option>
+                    </select>
+                    <div class="invalid-feedback">Please choose a package.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="budget" class="form-label">Budget (Optional)</label>
+                    <input type="text" class="form-control" id="budget" name="budget" maxlength="60" placeholder="e.g. ₹15,000 – ₹30,000" />
+                  </div>
+                  <div class="col-12">
+                    <label for="message" class="form-label">Tell us about your project *</label>
+                    <textarea class="form-control" id="message" name="message" rows="5" maxlength="2000" required placeholder="What does your business do? What pages or features do you need? Any deadline?"></textarea>
+                    <div class="invalid-feedback">Please share a few details about your project.</div>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-accent btn-lg w-100" id="submitBtn">Submit <i class="bi bi-send ms-1"></i></button>
+                    <p class="form-hint">We usually reply within 24 hours. Your details are only used to respond to your inquiry.</p>
+                  </div>
+                </div>
+              </form>
+
+              <div id="formSuccess" class="form-success d-none" role="status">
+                <i class="bi bi-check-circle"></i>
+                <h4>Thank you — your inquiry is ready!</h4>
+                <p class="text-soft mb-3">We will review your project details and get back to you soon. For a faster reply, DM us on Instagram.</p>
+                <a href="https://instagram.com/mirror_lancee" target="_blank" rel="noopener" class="btn btn-outline-accent btn-sm"><i class="bi bi-instagram me-1"></i>DM on Instagram</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         12. FINAL CTA
+         ========================================================= -->
+    <section class="cta-band">
+      <div class="container text-center">
+        <h2 class="cta-title">Ready to build your website?</h2>
+        <p class="cta-sub">Let’s create something that fits your business. Get a custom quote today.</p>
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+          <a href="#contact" class="btn btn-light-ml btn-lg">Send Inquiry</a>
+          <!-- REPLACE: Instagram URL -->
+          <a href="https://instagram.com/mirror_lancee" target="_blank" rel="noopener" class="btn btn-outline-light-ml btn-lg"><i class="bi bi-instagram me-2"></i>DM on Instagram</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================
+       13. FOOTER
+       ========================================================= -->
+  <footer class="ml-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <a class="ml-brand d-inline-block mb-3" href="#home"><span class="ml-brand-mark">M</span>Mirror<span class="text-accent">Lance</span></a>
+          <p class="text-soft">Modern websites for growing businesses. Clean design, fast performance, built to convert.</p>
+          <div class="footer-social">
+            <!-- REPLACE: social URLs -->
+            <a href="https://instagram.com/mirror_lancee" target="_blank" rel="noopener" class="social-primary"><i class="bi bi-instagram"></i> DM on Instagram</a>
+            <a href="https://linkedin.com/in/mirror-lance-4a4446448/" target="_blank" rel="noopener" class="social-secondary" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h4 class="footer-head">Quick Links</h4>
+          <ul class="footer-links list-unstyled">
+            <li><a href="#about">About</a></li>
+            <li><a href="#packages">Packages</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h4 class="footer-head">Services</h4>
+          <ul class="footer-links list-unstyled">
+            <li><a href="#services">Business Websites</a></li>
+            <li><a href="#services">Landing Pages</a></li>
+            <li><a href="#services">Website Redesign</a></li>
+            <li><a href="#services">Maintenance &amp; Support</a></li>
+            <li><a href="#services">AI Automation</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <h4 class="footer-head">Contact</h4>
+          <ul class="footer-links list-unstyled">
+            <!-- REPLACE: contact details -->
+            <li><i class="bi bi-envelope me-2 text-accent"></i><a href="mailto:mirrorlancee@gmail.com">mirrorlancee@gmail.com</a></li>
+            
+            <li><i class="bi bi-geo-alt me-2 text-accent"></i>India</li>
+          </ul>
+          <a href="#contact" class="btn btn-accent btn-sm mt-2">Get a Custom Quote</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="year"></span> MirrorLance. All rights reserved.</span>
+        <span>Instagram is the fastest way to reach us.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <a href="#home" class="back-to-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
