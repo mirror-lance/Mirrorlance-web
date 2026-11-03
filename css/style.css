@@ -371,9 +371,14 @@ a:hover { color: #ff3b4f; }
 iframe[id*="voiceflow-chat"] {
   z-index: 999999 !important;
 }
-/* Move Voiceflow chatbot to bottom-left */
+/* Move Voiceflow chatbot to top-right */
 .vfrc-launcher {
-    left: 20px !important;
-    right: auto !important;
-    bottom: 20px !important;
+    right: 20px !important;
+    left: auto !important;
+    top: 90px !important;
+    bottom: auto !important;
+}
+.vfrc-widget--chat {
+    top: 150px !important;
+    bottom: auto !important;
 }
