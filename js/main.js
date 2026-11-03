@@ -3,18 +3,7 @@
    ========================================================== */
 
 /* ----------------------------------------------------------
-   1. SETTINGS — edit these when your details are ready
-   ---------------------------------------------------------- */
-
-// Where inquiry emails should go (used when no FORM_ENDPOINT is set)
-const CONTACT_EMAIL = "mirrorlancee@gmail.com"; // REPLACE
-
-// Optional: paste a form service endpoint (e.g. Formspree, Getform, Web3Forms)
-// e.g. "https://formspree.io/f/xxxxxxx". Leave empty to use email instead.
-const FORM_ENDPOINT = ""; // REPLACE (optional)
-
-/* ----------------------------------------------------------
-   2. PORTFOLIO LINKS — replace titles + URLs with your real sites.
+   1. PORTFOLIO LINKS — replace titles + URLs with your real sites.
    Keys must match data-category on the portfolio cards in index.html.
    Add or remove items freely.
    ---------------------------------------------------------- */
@@ -60,7 +49,7 @@ const PORTFOLIO = {
 };
 
 /* ----------------------------------------------------------
-   3. BEHAVIOUR — no need to edit below this line
+   2. BEHAVIOUR — no need to edit below this line
    ---------------------------------------------------------- */
 document.addEventListener("DOMContentLoaded", () => {
   /* Navbar background on scroll + back-to-top */
@@ -144,57 +133,47 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  /* Inquiry form */
+  /* Inquiry form - EmailJS Integration */
   const form = document.getElementById("inquiryForm");
   const success = document.getElementById("formSuccess");
   const submitBtn = document.getElementById("submitBtn");
 
-  form.addEventListener("submit", async (e) => {
+  form.addEventListener("submit", (e) => {
     e.preventDefault();
+    
     // Trim values before validating
     form.querySelectorAll("input, textarea").forEach((f) => (f.value = f.value.trim()));
+    
+    // Check Bootstrap validity
     if (!form.checkValidity()) {
       form.classList.add("was-validated");
       form.querySelector(":invalid")?.focus();
       return;
     }
 
-    const data = Object.fromEntries(new FormData(form).entries());
+    // Show loading state
     submitBtn.disabled = true;
     submitBtn.innerHTML = 'Sending… <span class="spinner-border spinner-border-sm ms-1"></span>';
 
-    try {
-      if (FORM_ENDPOINT) {
-        const res = await fetch(FORM_ENDPOINT, {
-          method: "POST",
-          headers: { "Content-Type": "application/json", Accept: "application/json" },
-          body: JSON.stringify(data),
-        });
-        if (!res.ok) throw new Error("Request failed");
-      } else {
-        // Fallback: open the visitor's email app with the details filled in
-        const subject = `New inquiry — ${data.service} — ${data.fullName}`;
-        const body = [
-          `Full Name: ${data.fullName}`,
-          `Business Name: ${data.businessName || "-"}`,
-          `Email: ${data.email}`,
-          `Phone/WhatsApp: ${data.phone}`,
-          `Service Needed: ${data.service}`,
-          `Budget: ${data.budget || "-"}`,
-          "",
-          "Project details:",
-          data.message,
-        ].join("\n");
-        window.location.href = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-      }
-      form.classList.add("d-none");
-      success.classList.remove("d-none");
-    } catch (err) {
-      alert("Sorry, something went wrong. Please try again or DM us on Instagram.");
-    } finally {
-      submitBtn.disabled = false;
-      submitBtn.innerHTML = 'Submit <i class="bi bi-send ms-1"></i>';
-    }
+    // Send the form using EmailJS
+    emailjs.sendForm('service_mirrorlance', 'template_mirrorlance', form)
+      .then(() => {
+        // Success: Hide form, show success message, reset inputs
+        form.classList.add("d-none");
+        success.classList.remove("d-none");
+        form.reset();
+        form.classList.remove("was-validated");
+      })
+      .catch((error) => {
+        // Error: Show alert, log error
+        console.error('EmailJS Error:', error);
+        alert("Sorry, something went wrong sending your message. Please try again or DM us on Instagram.");
+      })
+      .finally(() => {
+        // Always restore the submit button to its original state
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = 'Submit <i class="bi bi-send ms-1"></i>';
+      });
   });
 
   /* Subtle reveal on scroll */
