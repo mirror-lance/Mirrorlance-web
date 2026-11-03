@@ -371,3 +371,8 @@ a:hover { color: #ff3b4f; }
 iframe[id*="voiceflow-chat"] {
   z-index: 999999 !important;
 }
+/* Force Voiceflow widget to the left side */
+iframe[id*="voiceflow-chat"] {
+  right: auto !important;
+  left: 20px !important;
+}
