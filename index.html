@@ -729,24 +729,14 @@
             url: 'https://runtime-api.voiceflow.com'
           },
           environmentID: 'main',
-          versionVariant: 'published'
+          versionVariant: 'published',
+          position: {
+            side: 'left'
+          }
         });
       }
       v.src = 'https://cdn.voiceflow.com/widget-next/bundle.mjs'; v.type = 'text/javascript'; s.parentNode.insertBefore(v, s);
   })(document, 'script');
 </script>
-window.voiceflow.chat.load({
-  verify: { projectID: '6ae9973ad6bb75fa4c6091d8' },
-  url: 'https://general-runtime.voiceflow.com',
-  voice: {
-    url: 'https://runtime-api.voiceflow.com'
-  },
-  environmentID: 'main',
-  versionVariant: 'published',
-  // Add this line to move the widget to the bottom-left corner
-  position: {
-    side: 'left'
-  }
-});
 </body>
 </html>
